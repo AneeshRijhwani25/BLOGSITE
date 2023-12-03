@@ -16,7 +16,7 @@ const shuffleArray = (arrayOrObject) => {
   return shuffledArray;
 };
 const getData = async () => {
-  const res = await fetch("/api/categories", {
+  const res = await fetch("https://vitbblogs.vercel.app/api/categories", {
     cache: "no-store",
   });
 

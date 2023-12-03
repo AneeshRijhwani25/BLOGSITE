@@ -2,7 +2,7 @@ import styles from "./featured.module.css";
 import Image from "next/image";
 import Link from "next/link";
 const getData = async (slug) => {
-  const res = await fetch("/api/featurepost", {
+  const res = await fetch("https://vitbblogs.vercel.app/api/featurepost", {
     cache: "no-store",
   });
 

@@ -4,7 +4,7 @@ import MenuPosts from "../menuPosts/MenuPosts";
 import MenuCategories from "../menuCategories/MenuCategories";
 
 const getMostpopData = async () => {
-  const res = await fetch("/api/mostpop", {
+  const res = await fetch("https://vitbblogs.vercel.app/api/mostpop", {
     cache: "no-store",
   });
 
@@ -14,7 +14,7 @@ const getMostpopData = async () => {
   return res.json();
 };
 const getlatestData = async () => {
-  const res = await fetch("/api/newupdates", {
+  const res = await fetch("https://vitbblogs.vercel.app/api/newupdates", {
     cache: "no-store",
   });
 
