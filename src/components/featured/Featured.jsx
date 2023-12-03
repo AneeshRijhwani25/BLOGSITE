@@ -2,7 +2,7 @@ import styles from "./featured.module.css";
 import Image from "next/image";
 import Link from "next/link";
 const getData = async (slug) => {
-  const res = await fetch("http://localhost:3000/api/featurepost", {
+  const res = await fetch("/api/featurepost", {
     cache: "no-store",
   });
 
